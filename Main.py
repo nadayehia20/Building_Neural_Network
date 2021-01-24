@@ -7,7 +7,7 @@ nn.add_layer(units=20, activation='tanh', initializer='xavier')
 nn.add_layer(units=40, activation='tanh', initializer='xavier')
 nn.add_layer(units=10, activation='softmax', initializer='xavier')
 data_loader=Data()
-path='train.csv'  # MINNST Data
+path='train.csv'  # MNIST Data
 label='label'
 x_train, y_train, x_test, y_test=data_loader.load_data(path,label)
 nn.train(x_train=x_train, y_train=y_train, iterations=150)
