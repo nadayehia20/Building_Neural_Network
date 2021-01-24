@@ -31,4 +31,8 @@
             # Update parameters
             W[l] = W[l] - learning_rate*dW
             b[l] = b[l] - learning_rate*dB
+            
+            
+            
+            
 
