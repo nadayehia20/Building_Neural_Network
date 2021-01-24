@@ -1,13 +1,13 @@
 from distutils.core import setup
 setup(
-  name = 'Building_Neural_Network',         # How you named your package folder (MyLib)
-  packages = ['Building_Neural_Network'],   # Chose the same as "name"
+  name = 'NN',         # How you named your package folder (MyLib)
+  packages = ['NN'],   # Chose the same as "name"
   version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'TYPE YOUR DESCRIPTION HERE',   # Give a short description about your library
   author = 'YOUR NAME',                   # Type in your name
   author_email = 'yarafekrii@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/nadayehia20/Building_Neural_Network',   # Provide either the link to your github or to your website
+  url = 'https://github.com/nadayehia20/NN',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
   keywords = ['Neural', 'Networks'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
