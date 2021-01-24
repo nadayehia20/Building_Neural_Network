@@ -8,14 +8,13 @@
         :param X_input: Training set
                W:  weights of the layers
                b:  bias of the layers 
-               Z:
-               A:
+               Z:  activation input
+               A:  activation output
                layer_initializers: array has the type of weights initiaizations of each layer
                layer_units: array has the number of neuron units in each layer
 
         
-         
-        '''
+         '''
         
 
         layer_units[0] = X_input.shape[0]
