@@ -3,7 +3,7 @@
 
        '''
         Initializes weight and bias matrices for training, using the desired initialization algorithm(s) 
-        that will be chosen by the user whether to choose  to initialize weights by zeros or random intialization.
+        that will be chosen by the user whether to choose  to initialize weights by zeros or randomor xavier intialization.
 
         :param X_input: Training set
                W:  weights of the layers
@@ -28,8 +28,12 @@
             if layer_initializers[l] == 'zeros':
                 W.append(np.zeros(shape=(n_l, n_prev), dtype=np.float32))
                 b.append(np.zeros(shape=(n_l, 1), dtype=np.float32))
-
             
+            elif self.layer_initializers[l] == 'xavier':
+                stddev = np.sqrt(1/n_prev)
+                self.W.append(stddev*np.random.randn(n_l, n_prev).astype(np.float32))
+                self.b.append(stddev*np.random.randn(n_l, 1).astype(np.float32))
+
 
             elif layer_initializers[l] == 'random':
                 W.append(np.random.rand(n_l, n_prev).astype(np.float32))
